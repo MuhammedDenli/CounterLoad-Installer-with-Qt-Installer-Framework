@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>CounterLoad</Name>
+    <Version>1.2.3</Version>
+    <Title>CounterLoad Kurulum Sihirbazi</Title>
+    <Publisher>CounterLoad Corporation</Publisher>
+    <TargetDir>@HomeDir@/CounterLoad</TargetDir>
+    <RunProgram>@TargetDir@/counterload</RunProgram>
+    <RunProgramDescription>Uygulamayi simdi baslat</RunProgramDescription>
+</Installer>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>CounterLoad Core Application</DisplayName>
+    <Description>CounterLoad ana uygulama dosyalari ve bagimliliklari.</Description>
+    <Version>1.2.3</Version>
+    <ReleaseDate>2026-07-08</ReleaseDate>
+    <Script>installscript.js</Script>
+    <Default>true</Default>
+</Package>
