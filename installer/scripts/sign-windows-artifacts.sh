@@ -29,7 +29,7 @@ if [ -z "$CERT_PATH" ] || [ -z "$PASSWORD" ] || [ -z "$TARGET_PATH" ]; then
     usage
 fi
 
-# Tek bir dosyayı imzalayan fonksiyon
+# Tek bir dosyayı imzalayan fonksiyon ve doğrulaması
 sign_file() {
     local FILE="$1"
     echo "=> İmzalama işlemi başlatıldı: $FILE"
@@ -48,6 +48,16 @@ sign_file() {
     # Orijinal dosyanın üzerine imzalanmış sürümü yazalım
     mv "$FILE.signed" "$FILE"
     echo "=> Başarıyla imzalandı: $FILE"
+
+    # İmzayı doğrula
+    local PEM_PATH="${CERT_PATH%.*}.pem"
+    echo "=> İmza doğrulama işlemi başlatıldı: $FILE"
+    if [ -f "$PEM_PATH" ]; then
+        osslsigncode verify -CAfile "$PEM_PATH" -in "$FILE"
+    else
+        osslsigncode verify -in "$FILE"
+    fi
+    echo "=> İmza başarıyla doğrulandı ve geçerli: $FILE"
 }
 
 # Ana akış kontrolü

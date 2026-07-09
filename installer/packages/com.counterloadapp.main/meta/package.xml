@@ -4,6 +4,9 @@
     <Description>CounterLoad ana uygulama dosyalari ve bagimliliklari.</Description>
     <Version>1.2.3</Version>
     <ReleaseDate>2026-07-08</ReleaseDate>
+    <UserInterfaces>
+        <UserInterface>shortcutcheckbox.ui</UserInterface>
+    </UserInterfaces>
     <Script>installscript.js</Script>
     <Default>true</Default>
 </Package>
