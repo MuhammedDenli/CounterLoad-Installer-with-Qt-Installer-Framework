@@ -95,6 +95,26 @@ if [ "$PLATFORM" == "windows" ]; then
 else
     echo "👉 [4/4] Linux nihai paketi (.run) için çalıştırma izinleri tanımlanıyor..."
     chmod +x artifacts/linux/CounterLoadSetup.run
+
+    echo "👉 Linux paketi için SHA-256 bütünlük kontrol dosyası (.sha256) oluşturuluyor..."
+    (cd artifacts/linux && sha256sum CounterLoadSetup.run > CounterLoadSetup.run.sha256)
+    echo "👉 SHA-256 checksum başarıyla oluşturuldu: artifacts/linux/CounterLoadSetup.run.sha256"
+
+    # GPG İmza Kontrolü ve Detached Signature
+    if command -v gpg >/dev/null 2>&1; then
+        echo "👉 GPG tespit edildi. Anahtar kontrolü yapılıyor..."
+        # Eğer bir GPG anahtarı mevcutsa imzalayalım
+        GPG_KEYS=$(gpg --list-secret-keys --keyid-format LONG | grep sec || true)
+        if [ -n "$GPG_KEYS" ]; then
+            echo "👉 GPG gizli anahtarı bulundu, detached signature (.asc) oluşturuluyor..."
+            (cd artifacts/linux && gpg --batch --yes --detach-sign --armor CounterLoadSetup.run)
+            echo "👉 Detached signature başarıyla oluşturuldu: artifacts/linux/CounterLoadSetup.run.asc"
+        else
+            echo "⚠️ Uyarı: Sistemde aktif bir GPG gizli anahtarı bulunamadı. GPG imzalama adımı atlanıyor."
+        fi
+    else
+        echo "⚠️ Uyarı: 'gpg' aracı sistemde bulunamadı. GPG imzalama adımı atlanıyor."
+    fi
 fi
 
 echo "================================================================="
