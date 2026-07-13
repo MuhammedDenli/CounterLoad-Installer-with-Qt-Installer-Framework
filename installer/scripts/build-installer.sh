@@ -69,6 +69,13 @@ if [ -z "$VERSION" ]; then
     usage
 fi
 
+# Config ve paket dosyalarındaki sürüm bilgilerini dinamik olarak güncelleyelim
+echo "👉 Yapılandırma ve paket dosyalarındaki sürüm bilgileri v$VERSION olarak güncelleniyor..."
+sed -i "s|<Version>[^<]*</Version>|<Version>$VERSION</Version>|g" "installer/config/config-windows.xml"
+sed -i "s|<Version>[^<]*</Version>|<Version>$VERSION</Version>|g" "installer/config/config-linux.xml"
+sed -i "s|<Version>[^<]*</Version>|<Version>$VERSION</Version>|g" "installer/packages/com.counterloadapp.main/meta/package.xml"
+
+
 if [ "$BUILD_WINDOWS" = false ] && [ "$BUILD_LINUX" = false ]; then
     echo "Hata: En az bir platform seçilmelidir (--build-windows veya --build-linux)!"
     usage
