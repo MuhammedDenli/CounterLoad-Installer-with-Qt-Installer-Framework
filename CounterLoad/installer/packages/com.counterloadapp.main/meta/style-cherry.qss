@@ -1,0 +1,210 @@
+/* Global olarak tüm widget'lar için koyu mod (Beyaz alanları tamamen kaldırır) */
+QWidget {
+    background-color: #000000;
+    color: #e5e7eb;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+}
+
+/* Ana Pencere */
+QWizard {
+    background-color: #000000;
+    min-width: 850px;
+    max-width: 850px;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+QWizardPage {
+    background-color: #000000;
+}
+
+/* Yükleyici Üst Bilgi (Header) Alanı - Arka planı şeffaf bırakıyoruz ki banner.png gözüksün */
+QWidget#qt_wizard_header {
+    background-color: transparent;
+    border-bottom: 1px solid #A90432;
+    min-height: 85px;
+    height: 85px;
+}
+
+/* Header altındaki tüm alt nesnelerin arka planını şeffaf yapıyoruz ki banner.png üzerindeki logolar kapanmasın */
+QWidget#qt_wizard_header * {
+    background-color: transparent;
+    background: transparent;
+}
+
+/* Üst Bilgi Yazıları */
+QWidget#qt_wizard_header QLabel {
+    color: #ffffff;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: transparent;
+    background: transparent;
+}
+
+/* Bileşen Seçimi Sağ Panel (Garip Beyazlığın Kaldırılması) */
+QTextBrowser {
+    background-color: #0a0a0c;
+    color: #e5e7eb;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px; 
+    padding: 6px;
+}
+
+/* Tüm Etiketler (Yazılar) */
+QLabel {
+    color: #e5e7eb;
+}
+
+/* Başlık Etiketleri */
+QWidget#qt_wizard_header QLabel#titleLabel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-left: 120px; 
+    margin-right: 120px;
+    qproperty-alignment: 'AlignHCenter | AlignVCenter'; 
+    background-color: transparent;
+    background: transparent;
+}
+
+QWidget#qt_wizard_header QLabel#subTitleLabel {
+    font-size: 14px;
+    color: #9ca3af;
+    margin-left: 120px;
+    margin-right: 120px;
+    qproperty-alignment: 'AlignHCenter | AlignVCenter';
+    background-color: transparent;
+    background: transparent;
+}
+
+/* Butonlar */
+QPushButton {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #c40a3f, stop:1 #A90432);
+    color: #ffffff;
+    border: 1px solid #A90432;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: bold;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #FDB912, stop:1 #e0a30d);
+    border-color: #FDB912;
+    color: #000000;
+}
+
+QPushButton:pressed {
+    background: #800225;
+    border-color: #800225;
+    color: #ffffff;
+}
+
+QPushButton:disabled {
+    background-color: #1a1a1a;
+    color: #555555;
+    border: 1px solid #2d2d2d;
+}
+
+/* Metin Giriş Alanları (Inputs) */
+QLineEdit {
+    background-color: #0a0a0c;
+    color: #ffffff;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+    padding: 6px;
+    selection-background-color: #A90432;
+}
+
+QLineEdit:focus {
+    border: 2px solid #FDB912;
+    background-color: #000000;
+}
+
+/* Onay Kutuları (Checkboxes) ve Radyo Butonları */
+QCheckBox, QRadioButton {
+    color: #e5e7eb;
+    spacing: 8px;
+}
+
+QCheckBox::indicator, QRadioButton::indicator {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #44444c;
+    border-radius: 4px;
+    background-color: #0a0a0c;
+}
+
+QCheckBox::indicator:checked, QRadioButton::indicator:checked {
+    background-color: #A90432;
+    border-color: #FDB912;
+}
+
+/* İlerleme Çubuğu (Progress Bar) */
+QProgressBar {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    border: 1px solid #2d2d2d;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    height: 20px;
+}
+
+QProgressBar::chunk {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #A90432, stop:1 #FDB912);
+    border-radius: 7px;
+}
+
+/* Liste ve Ağaç Yapısı Görünümleri (Örn. Bileşen Seçimi) */
+QTreeView, QListView {
+    background-color: #0a0a0c;
+    color: #e5e7eb;
+    border: 1px solid #2d2d2d;
+    border-radius: 6px;
+}
+
+QTreeView::item:hover, QListView::item:hover {
+    background-color: #1a1a1c;
+}
+
+QTreeView::item:selected, QListView::item:selected {
+    background-color: #A90432;
+    color: #ffffff;
+}
+
+/* Scroll (Kaydırma) Çubukları */
+QScrollBar:vertical {
+    background-color: #0a0a0c;
+    width: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #2d2d2d;
+    min-height: 20px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: #A90432;
+}
+
+QScrollBar:horizontal {
+    background-color: #0a0a0c;
+    height: 12px;
+    margin: 0px;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #2d2d2d;
+    min-width: 20px;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background-color: #A90432;
+}

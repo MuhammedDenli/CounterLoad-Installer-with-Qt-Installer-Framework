@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>CounterLoad Core Application</DisplayName>
+    <Description>CounterLoad main application and dependencies.</Description>
+    <Version>1.2.5</Version>
+    <ReleaseDate>2026-07-08</ReleaseDate>
+    <UserInterfaces>
+        <UserInterface>shortcutcheckbox.ui</UserInterface>
+        <UserInterface>configpage.ui</UserInterface>
+    </UserInterfaces>
+    <Script>installscript.js</Script>
+    <Licenses>
+        <License name="CounterLoad Software License Agreement" file="license.txt" />
+    </Licenses>
+    <Default>true</Default>
+</Package>

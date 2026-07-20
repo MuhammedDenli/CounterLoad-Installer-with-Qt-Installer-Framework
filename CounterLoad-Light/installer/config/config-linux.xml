@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>CounterLoad</Name>
+    <Version>1.2.5</Version>
+    <Title>CounterLoad v1.2.5</Title>
+    <Publisher>CounterLoad Corporation</Publisher>
+    <TargetDir>@HomeDir@/Kurulumlar/CounterLoad</TargetDir>
+    <RunProgram>@TargetDir@/counterload</RunProgram>
+    <RunProgramDescription>Uygulamayi simdi baslat</RunProgramDescription>
+    <InstallerWindowIcon>installericon</InstallerWindowIcon>
+    <InstallerApplicationIcon>installericon</InstallerApplicationIcon>
+    <WizardStyle>ModernStyle</WizardStyle>
+    <Logo>logo2.png</Logo>
+    <WizardDefaultWidth>850</WizardDefaultWidth>
+    <WizardDefaultHeight>600</WizardDefaultHeight>
+</Installer>

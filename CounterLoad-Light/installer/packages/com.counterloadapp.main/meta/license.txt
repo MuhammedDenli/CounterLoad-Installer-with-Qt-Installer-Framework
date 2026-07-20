@@ -1,0 +1,9 @@
+CounterLoad Software License Agreement
+
+By installing and using this software, you agree to the following terms:
+
+1. LICENSE FOR USE: This software is licensed for both commercial and personal use. Copying, reverse engineering, or unauthorized distribution of the software source code is strictly prohibited.
+2. WARRANTY DISCLAIMER: The software is provided "as is", without warranty of any kind, express or implied.
+3. LIMITATION OF LIABILITY: In no event shall the author or publisher be liable for any direct or indirect damages arising from the use of this software.
+
+To continue, please select the "Accept" option below.

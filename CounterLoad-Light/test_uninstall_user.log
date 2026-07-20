@@ -1,0 +1,108 @@
+[0] Arguments: /home/user/CounterLoad/test_install_user/maintenancetool, purge, --confirm-command
+[1] Operations sanity check succeeded.
+[1] Using metadata cache from "/home/user/.cache/qt-installer-framework/c42e2da3-1f4e-3b79-b406-d4f086be4496"
+[1] Found 0 cached items.
+[1] Complete uninstallation was chosen.
+[1] undo operation= "License"
+[1] undo com.counterloadapp.main operation: License
+[1] 	- arguments: /home/user/CounterLoad/test_install_user/Licenses
+[1] Done
+[1] undo operation= "MinimumProgress"
+[2] undo operation= "CreateDesktopEntry"
+[2] undo com.counterloadapp.main operation: CreateDesktopEntry
+[2] 	- arguments: /home/user/.local/share/applications/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[2] Done
+[2] undo operation= "Execute"
+[2] undo com.counterloadapp.main operation: Execute
+[2] 	- arguments: mkdir, -p, /home/user/.local/share/applications
+[2] Done
+[2] undo operation= "Execute"
+[2] undo com.counterloadapp.main operation: Execute
+[2] 	- arguments: sh, -c, gio set "/home/user/Masaüstü/CounterLoad.desktop" metadata::trusted true || true
+[2] Done
+[2] undo operation= "Execute"
+[2] undo com.counterloadapp.main operation: Execute
+[2] 	- arguments: chmod, +x, /home/user/Masaüstü/CounterLoad.desktop
+[2] Done
+[2] undo operation= "CreateDesktopEntry"
+[2] undo com.counterloadapp.main operation: CreateDesktopEntry
+[2] 	- arguments: /home/user/Masaüstü/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[3] Done
+[3] undo operation= "Execute"
+[3] undo com.counterloadapp.main operation: Execute
+[3] 	- arguments: mkdir, -p, /home/user/Masaüstü
+[3] Done
+[3] undo operation= "Execute"
+[3] undo com.counterloadapp.main operation: Execute
+[3] 	- arguments: chmod, +x, /home/user/CounterLoad/test_install_user/counterload
+[3] Done
+[3] undo operation= "Settings"
+[3] undo com.counterloadapp.main operation: Settings
+[3] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileSize, value=50
+[3] Done
+[3] undo operation= "Settings"
+[3] undo com.counterloadapp.main operation: Settings
+[3] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileCount, value=500
+[3] Done
+[3] undo operation= "Settings"
+[3] undo com.counterloadapp.main operation: Settings
+[3] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logLevel, value=2
+[3] Done
+[3] undo operation= "Settings"
+[3] undo com.counterloadapp.main operation: Settings
+[3] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Mode/mode, value=Elit
+[9] Done
+[9] undo operation= "Settings"
+[9] undo com.counterloadapp.main operation: Settings
+[9] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Device/serialNo, value=003
+[13] Done
+[13] undo operation= "Settings"
+[13] undo com.counterloadapp.main operation: Settings
+[13] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteIp, value=172.17.0.3
+[16] Done
+[16] undo operation= "Settings"
+[16] undo com.counterloadapp.main operation: Settings
+[16] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteManPort, value=4445
+[20] Done
+[20] undo operation= "Settings"
+[20] undo com.counterloadapp.main operation: Settings
+[20] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteAppPort, value=4444
+[24] Done
+[24] undo operation= "Settings"
+[24] undo com.counterloadapp.main operation: Settings
+[24] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/cliAuthServicePort, value=7894
+[28] Done
+[28] undo operation= "Mkdir"
+[28] undo com.counterloadapp.main operation: Mkdir
+[28] 	- arguments: /home/user/CounterLoad/test_install_user/config
+[28] Done
+[28] undo operation= "Extract"
+[28] undo com.counterloadapp.main operation: Extract
+[28] 	- arguments: installer://com.counterloadapp.main/1.2.5lib.7z, /home/user/CounterLoad/test_install_user
+[28] Done
+[28] undo operation= "Extract"
+[29] undo com.counterloadapp.main operation: Extract
+[29] 	- arguments: installer://com.counterloadapp.main/1.2.5config.7z, /home/user/CounterLoad/test_install_user
+[29] Done
+[29] undo operation= "Extract"
+[29] undo com.counterloadapp.main operation: Extract
+[29] 	- arguments: installer://com.counterloadapp.main/1.2.5resources.7z, /home/user/CounterLoad/test_install_user
+[30] Done
+[30] undo operation= "Extract"
+[30] undo com.counterloadapp.main operation: Extract
+[30] 	- arguments: installer://com.counterloadapp.main/1.2.5content.7z, /home/user/CounterLoad/test_install_user
+[35] Done
+[35] Complete uninstallation was chosen.
+[35] Removal completed successfully.

@@ -1,0 +1,40 @@
+*****	.exe ve .run build	*****
+
+./installer/scripts/build-windows-installer.sh --version 1.2.5
+./installer/scripts/build-linux-installer.sh --version 1.2.5
+./installer/scripts/build-installer.sh --version 1.2.5 --build-linux --build-windows --sign-windows
+
+
+*****	Linux Komutlar	*****
+***Sessiz Kurulum***
+./artifacts/linux/CounterLoadSetup-1.2.5.run install --accept-licenses --confirm-command
+
+
+./artifacts/linux/CounterLoadSetup-1.2.5.run --root "/hedef/ozel/dizin" install --accept-licenses ---confirm-command
+
+
+env -u DISPLAY -u WAYLAND_DISPLAY ./artifacts/linux/CounterLoadSetup-1.2.5.run install --accept-licenses --confirm-command
+
+
+***Sessiz Kaldırma***
+
+~/Kurulumlar/CounterLoad/maintenancetool purge --confirm-command
+ 
+env -u DISPLAY -u WAYLAND_DISPLAY ~/Kurulumlar/CounterLoad/maintenancetool purge --confirm-command
+
+
+
+
+
+
+
+*****	Windows Komutlar    *****
+CounterLoadSetup-1.2.5.exe
+CounterLoadSetup-1.2.5.exe --mode text
+CounterLoadSetup-1.2.5.exe install --accept-licenses --confirm-command
+CounterLoadSetup-1.2.5.exe --root "C:\Programlar\CounterLoad" install --accept-licenses --confirm-command
+
+"C:\Program Files\CounterLoad\maintenancetool.exe" --mode text
+"C:\Program Files\CounterLoad\maintenancetool.exe" purge --confirm-command
+
+

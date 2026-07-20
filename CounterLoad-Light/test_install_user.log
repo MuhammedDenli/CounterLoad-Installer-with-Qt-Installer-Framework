@@ -1,0 +1,192 @@
+[0] Arguments: /tmp/counterload-installer-tzpV1N/CounterLoadSetup.bin, --root, /home/user/CounterLoad/test_install_user, install, --accept-licenses, --confirm-command
+[0] Operations sanity check succeeded.
+[1] Using metadata cache from "/home/user/.cache/qt-installer-framework/c42e2da3-1f4e-3b79-b406-d4f086be4496"
+[1] Found 0 cached items.
+[1] Fetching latest update information...
+[1] Loading component scripts...
+[3] License "CounterLoad Software License Agreement" accepted by user.
+[3] Loading component scripts...
+[3] Warning: QFont::setPixelSize: Pixel size <= 0 (-1)
+[3] Selected components without dependencies:
+com.counterloadapp.main
+[3] Installation space required: "29.63 MB" Temporary space required: "0.00 bytes" Local repository size: "0.00 bytes"
+[3] Cache and install directories are on the same volume. Volume mount point: "/" Free space available: "368.49 GB"
+[3] Installation will use 26.93 MB of disk space.
+[3] backup  operation: Mkdir
+[3] 	- arguments: /home/user/CounterLoad/test_install_user
+[3] Done
+[4] perform  operation: Mkdir
+[4] 	- arguments: /home/user/CounterLoad/test_install_user
+[4] Done
+[4] Preparing the installation...
+[4] Install size: 1 components
+[10] Preparing to unpack components...
+[11] backup com.counterloadapp.main concurrent operation: Extract
+[11] 	- arguments: installer://com.counterloadapp.main/1.2.5config.7z, /home/user/CounterLoad/test_install_user
+[11] Started
+[11] backup com.counterloadapp.main concurrent operation: Extract
+[11] 	- arguments: installer://com.counterloadapp.main/1.2.5lib.7z, /home/user/CounterLoad/test_install_user
+[11] Started
+[11] backup com.counterloadapp.main concurrent operation: Extract
+[11] 	- arguments: installer://com.counterloadapp.main/1.2.5resources.7z, /home/user/CounterLoad/test_install_user
+[11] Started
+[11] backup com.counterloadapp.main concurrent operation: Extract
+[11] 	- arguments: installer://com.counterloadapp.main/1.2.5content.7z, /home/user/CounterLoad/test_install_user
+[11] Started
+[13] Unpacking components...
+[13] perform com.counterloadapp.main concurrent operation: Extract
+[13] 	- arguments: installer://com.counterloadapp.main/1.2.5content.7z, /home/user/CounterLoad/test_install_user
+[13] Started
+[13] perform com.counterloadapp.main concurrent operation: Extract
+[13] 	- arguments: installer://com.counterloadapp.main/1.2.5resources.7z, /home/user/CounterLoad/test_install_user
+[13] Started
+[13] perform com.counterloadapp.main concurrent operation: Extract
+[13] 	- arguments: installer://com.counterloadapp.main/1.2.5config.7z, /home/user/CounterLoad/test_install_user
+[13] Started
+[13] perform com.counterloadapp.main concurrent operation: Extract
+[13] 	- arguments: installer://com.counterloadapp.main/1.2.5lib.7z, /home/user/CounterLoad/test_install_user
+[13] Started
+[319] Installing component CounterLoad Core Application
+[319] backup com.counterloadapp.main operation: Mkdir
+[319] 	- arguments: /home/user/CounterLoad/test_install_user/config
+[319] Done
+[319] perform com.counterloadapp.main operation: Mkdir
+[319] 	- arguments: /home/user/CounterLoad/test_install_user/config
+[319] Done
+[319] backup com.counterloadapp.main operation: Settings
+[319] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/cliAuthServicePort, value=7894
+[319] Done
+[320] perform com.counterloadapp.main operation: Settings
+[320] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/cliAuthServicePort, value=7894
+[328] Done
+[328] backup com.counterloadapp.main operation: Settings
+[328] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteAppPort, value=4444
+[328] Done
+[328] perform com.counterloadapp.main operation: Settings
+[328] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteAppPort, value=4444
+[332] Done
+[332] backup com.counterloadapp.main operation: Settings
+[332] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteManPort, value=4445
+[332] Done
+[333] perform com.counterloadapp.main operation: Settings
+[333] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteManPort, value=4445
+[336] Done
+[336] backup com.counterloadapp.main operation: Settings
+[336] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteIp, value=172.17.0.3
+[336] Done
+[336] perform com.counterloadapp.main operation: Settings
+[336] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=NetworkSettings/remoteIp, value=172.17.0.3
+[339] Done
+[340] backup com.counterloadapp.main operation: Settings
+[340] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Device/serialNo, value=003
+[340] Done
+[340] perform com.counterloadapp.main operation: Settings
+[340] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Device/serialNo, value=003
+[343] Done
+[343] backup com.counterloadapp.main operation: Settings
+[343] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Mode/mode, value=Elit
+[343] Done
+[344] perform com.counterloadapp.main operation: Settings
+[344] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=Mode/mode, value=Elit
+[347] Done
+[347] backup com.counterloadapp.main operation: Settings
+[347] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logLevel, value=2
+[347] Done
+[347] perform com.counterloadapp.main operation: Settings
+[347] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logLevel, value=2
+[350] Done
+[351] backup com.counterloadapp.main operation: Settings
+[351] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileCount, value=500
+[351] Done
+[351] perform com.counterloadapp.main operation: Settings
+[351] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileCount, value=500
+[354] Done
+[354] backup com.counterloadapp.main operation: Settings
+[354] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileSize, value=50
+[354] Done
+[354] perform com.counterloadapp.main operation: Settings
+[354] 	- arguments: path=/home/user/CounterLoad/test_install_user/config/config.ini, method=set, key=general/logMaxFileSize, value=50
+[358] Done
+[358] backup com.counterloadapp.main operation: Execute
+[358] 	- arguments: chmod, +x, /home/user/CounterLoad/test_install_user/counterload
+[358] Done
+[358] perform com.counterloadapp.main operation: Execute
+[358] 	- arguments: chmod, +x, /home/user/CounterLoad/test_install_user/counterload
+[360] chmod" started, arguments: "+x /home/user/CounterLoad/test_install_user/counterload
+[362] Done
+[362] backup com.counterloadapp.main operation: Execute
+[362] 	- arguments: mkdir, -p, /home/user/Masaüstü
+[362] Done
+[362] perform com.counterloadapp.main operation: Execute
+[362] 	- arguments: mkdir, -p, /home/user/Masaüstü
+[363] mkdir" started, arguments: "-p /home/user/Masaüstü
+[365] Done
+[365] backup com.counterloadapp.main operation: CreateDesktopEntry
+[365] 	- arguments: /home/user/Masaüstü/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[366] Done
+[366] perform com.counterloadapp.main operation: CreateDesktopEntry
+[366] 	- arguments: /home/user/Masaüstü/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[366] Done
+[366] backup com.counterloadapp.main operation: Execute
+[366] 	- arguments: chmod, +x, /home/user/Masaüstü/CounterLoad.desktop
+[366] Done
+[366] perform com.counterloadapp.main operation: Execute
+[366] 	- arguments: chmod, +x, /home/user/Masaüstü/CounterLoad.desktop
+[367] chmod" started, arguments: "+x /home/user/Masaüstü/CounterLoad.desktop
+[368] Done
+[368] backup com.counterloadapp.main operation: Execute
+[368] 	- arguments: sh, -c, gio set "/home/user/Masaüstü/CounterLoad.desktop" metadata::trusted true || true
+[368] Done
+[368] perform com.counterloadapp.main operation: Execute
+[368] 	- arguments: sh, -c, gio set "/home/user/Masaüstü/CounterLoad.desktop" metadata::trusted true || true
+[369] sh" started, arguments: "-c gio set \"/home/user/Masaüstü/CounterLoad.desktop\" metadata::trusted true || true
+[378] Done
+[378] backup com.counterloadapp.main operation: Execute
+[378] 	- arguments: mkdir, -p, /home/user/.local/share/applications
+[378] Done
+[378] perform com.counterloadapp.main operation: Execute
+[378] 	- arguments: mkdir, -p, /home/user/.local/share/applications
+[379] mkdir" started, arguments: "-p /home/user/.local/share/applications
+[380] Done
+[381] backup com.counterloadapp.main operation: CreateDesktopEntry
+[381] 	- arguments: /home/user/.local/share/applications/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[381] Done
+[381] perform com.counterloadapp.main operation: CreateDesktopEntry
+[381] 	- arguments: /home/user/.local/share/applications/CounterLoad.desktop, Version=1.0
+Type=Application
+Terminal=false
+Exec=gnome-terminal -- /home/user/CounterLoad/test_install_user/counterload
+Name=CounterLoad
+Icon=/home/user/CounterLoad/test_install_user/resources/icons/counterload.png
+Path=/home/user/CounterLoad/test_install_user
+[381] Done
+[382] backup com.counterloadapp.main operation: License
+[382] 	- arguments:
+[382] Done
+[382] perform com.counterloadapp.main operation: License
+[382] 	- arguments:
+[382] Done
+[383] Writing maintenance tool: "/home/user/CounterLoad/test_install_user/maintenancetool.new"
+[383] Writing maintenance tool.
+[409] Wrote permissions for maintenance tool.
+[416] Maintenance tool hard restart: false.
+[416] Installation finished!
+[416] Components installed successfully.
