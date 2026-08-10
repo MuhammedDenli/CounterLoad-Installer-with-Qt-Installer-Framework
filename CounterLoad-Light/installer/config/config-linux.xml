@@ -4,7 +4,7 @@
     <Version>1.2.5</Version>
     <Title>CounterLoad v1.2.5</Title>
     <Publisher>CounterLoad Corporation</Publisher>
-    <TargetDir>@HomeDir@/Kurulumlar/CounterLoad</TargetDir>
+    <TargetDir>@HomeDir@/.local/share/CounterLoad-Light</TargetDir>
     <RunProgram>@TargetDir@/counterload</RunProgram>
     <RunProgramDescription>Uygulamayi simdi baslat</RunProgramDescription>
     <InstallerWindowIcon>installericon</InstallerWindowIcon>

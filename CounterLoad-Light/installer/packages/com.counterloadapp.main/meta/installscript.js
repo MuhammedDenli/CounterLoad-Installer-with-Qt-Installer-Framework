@@ -21,15 +21,15 @@ function Component() {
         // Tolerans
     }
 
-    // Windows'ta başlangıç yetkisine göre varsayılan dizini ayarla
+    // Windows ve Linux'ta başlangıç yetkisine göre varsayılan dizini ayarla
+    var isAdmin = false;
+    try {
+        isAdmin = installer.hasAdminRights();
+    } catch (e) {
+        // Eski versiyon uyumluluğu için
+    }
+
     if (systemInfo.productType === "windows") {
-        var isAdmin = false;
-        try {
-            isAdmin = installer.hasAdminRights();
-        } catch (e) {
-            // Eski versiyon uyumluluğu için
-        }
-        
         if (isAdmin) {
             // Yönetici yetkisi varsa all-users kurulumu ve varsayılan olarak Program Files dizini
             installer.setValue("TargetDir", installer.value("ApplicationsDir") + "/CounterLoad");
@@ -37,6 +37,16 @@ function Component() {
         } else {
             // Standart kullanıcı ise per-user kurulumu ve ev dizini
             installer.setValue("TargetDir", installer.value("HomeDir") + "/CounterLoad");
+            installer.setValue("AllUsers", "false");
+        }
+    } else if (systemInfo.kernelType === "linux") {
+        if (isAdmin) {
+            // Root/Sudo yetkisi varsa Linux FHS standardı olarak /opt/CounterLoad
+            installer.setValue("TargetDir", "/opt/CounterLoad");
+            installer.setValue("AllUsers", "true");
+        } else {
+            // Standart kullanıcı için XDG standardı olarak ~/.local/share/CounterLoad
+            installer.setValue("TargetDir", installer.value("HomeDir") + "/.local/share/CounterLoad");
             installer.setValue("AllUsers", "false");
         }
     }

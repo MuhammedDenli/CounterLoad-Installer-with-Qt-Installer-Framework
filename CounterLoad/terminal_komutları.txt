@@ -18,9 +18,9 @@ env -u DISPLAY -u WAYLAND_DISPLAY ./artifacts/linux/CounterLoadSetup-1.2.5.run i
 
 ***Sessiz Kaldırma***
 
-~/Kurulumlar/CounterLoad/maintenancetool purge --confirm-command
+~/.local/share/CounterLoad/maintenancetool purge --confirm-command
  
-env -u DISPLAY -u WAYLAND_DISPLAY ~/Kurulumlar/CounterLoad/maintenancetool purge --confirm-command
+env -u DISPLAY -u WAYLAND_DISPLAY ~/.local/share/CounterLoad/maintenancetool purge --confirm-command
 
 
 

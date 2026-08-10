@@ -238,7 +238,7 @@ if [ "$IS_CLI_CMD" = true ]; then
     done
 
     if [ "$IS_INSTALL" = true ]; then
-        TARGET_DIR="$HOME/Kurulumlar/CounterLoad"
+        TARGET_DIR="$HOME/.local/share/CounterLoad-Light"
         args_copy=("$@")
         for ((i=0; i<${#args_copy[@]}; i++)); do
             arg="${args_copy[i]}"
@@ -281,7 +281,7 @@ if [ "$HAS_DISPLAY" = false ]; then
         echo "Kurulum komut satırı üzerinden interaktif olarak gerçekleştirilecektir."
         echo ""
 
-        DEFAULT_DIR="$HOME/Kurulumlar/CounterLoad"
+        DEFAULT_DIR="$HOME/.local/share/CounterLoad-Light"
         read -p "Kurulum yapılacak hedef dizin [$DEFAULT_DIR]: " TARGET_DIR
         if [ -z "$TARGET_DIR" ]; then
             TARGET_DIR="$DEFAULT_DIR"
@@ -344,7 +344,7 @@ if [ "$HAS_DISPLAY" = false ]; then
     else
         # Terminal interaktif değilse sessiz (silent) kurulumu varsayılan dizine başlatalım
         echo "Grafiksel oturum bulunamadı ve terminal interaktif değil."
-        DEFAULT_DIR="$HOME/Kurulumlar/CounterLoad"
+        DEFAULT_DIR="$HOME/.local/share/CounterLoad-Light"
         if [ -x "$DEFAULT_DIR/maintenancetool" ]; then
             echo "Mevcut kurulum tespit edildi ($DEFAULT_DIR). Güncelleme için eski sürüm kaldırılıyor..."
             env -u DISPLAY -u WAYLAND_DISPLAY QT_QPA_PLATFORM=minimal "$DEFAULT_DIR/maintenancetool" purge --confirm-command || true
